@@ -31,8 +31,6 @@ function submitForm(e){
     // Save message
     saveMessage(name, email, phone, message);
   
-    // Clear form
-    document.getElementById('contactForm').reset();
   }
   
   // Function to get get form values
