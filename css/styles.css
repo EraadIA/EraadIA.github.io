@@ -10877,6 +10877,15 @@ html {
   color: #fff;
 }
 
+.alert{
+  text-align: center;
+  padding:10px;
+  background:#79c879;
+  color:#fff;
+  margin-bottom:10px;
+  display:none;
+}
+
 .btn-xl {
   padding: 1rem 1.75rem;
   font-size: 1.25rem;

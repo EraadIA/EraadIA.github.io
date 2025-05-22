@@ -30,14 +30,25 @@ function submitForm(e){
   
     // Save message
     saveMessage(name, email, phone, message);
+
+
+    // Show alert
+    document.querySelector('.alert').style.display = 'block';
+
+    // Hide alert after 3 seconds
+    setTimeout(function(){
+      document.querySelector('.alert').style.display = 'none';
+    },3000);
+
+    // Clear form
+    document.getElementById('contactForm').reset();
+}
   
-  }
-  
-  // Function to get get form values
-  function getInputVal(id){
-    return document.getElementById(id).value;
-  }
-  
+// Function to get get form values
+function getInputVal(id){
+  return document.getElementById(id).value;
+}
+
 // Save message to firebase
 function saveMessage(name, company, email, phone, message){
     var newMessageRef = messagesRef.push();
