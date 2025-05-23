@@ -1,3 +1,4 @@
+console.log("contact.js loaded!");
 import firebase from "firebase/app";
 import "firebase/compat/database";
 
