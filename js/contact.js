@@ -58,4 +58,5 @@ function saveMessage(name, email, phone, message){
       phone:phone,
       message:message
     });
+    console.log("Message saved to Firebase!"); 
   }
