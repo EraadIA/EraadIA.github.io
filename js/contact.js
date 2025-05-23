@@ -15,7 +15,7 @@ const firebaseConfig = {
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 var messagesRef = firebase.database().ref('contactForm');
-document.getElementById('contactForm').addEventListener('submitButton', submitForm);
+document.getElementById('contactForm').addEventListener('submit', submitForm);
 
 
 // Submit form
@@ -50,7 +50,7 @@ function getInputVal(id){
 }
 
 // Save message to firebase
-function saveMessage(name, company, email, phone, message){
+function saveMessage(name, email, phone, message){
     var newMessageRef = messagesRef.push();
     newMessageRef.set({
       name: name,
